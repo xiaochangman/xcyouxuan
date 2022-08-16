@@ -3,7 +3,6 @@ import Vue from 'vue'
 import Canvas from '../views/canvas.vue'
 import Privew from '../views/privew.vue'
 import List from '../views/list.vue'
-import DataView from '../views/dateView.vue'
 
 // 通过vue.use(插件)，安装插件
 Vue.use(VueRouter)
@@ -25,6 +24,7 @@ const routes = [{
 	path: '/dataView',
 	component: DataView
 }]
+const app = getApp()
 const router = new VueRouter({
 	// 配置URL和组价直接的映射关系
 	routes,
